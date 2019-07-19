@@ -1,0 +1,82 @@
+.hotel-container {
+    margin-bottom: 30px;
+}
+
+.hotel {
+    display: flex;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.hotel.reviews-display {
+    border-radius: 7px 7px 0 0;
+}
+
+.hotel .photo{
+    flex: 1;
+    border-right: 1px solid #aaa;
+    background: center center no-repeat;
+}
+
+.hotel .data {
+    flex: 2;
+    padding: 30px 30px 30px 20px;
+    text-align: left;
+    background-color: #f6f6f6;
+}
+
+.hotel .data .title {
+    text-transform: capitalize;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hotel .data .stars {
+    color: #aaa;
+    font-size: 1.5rem;
+}
+
+.hotel .data .star {
+    color: #000;
+}
+
+.hotel .data .footer {
+    margin-top: 30px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer .action {
+    align-self: center;
+}
+
+.footer .price {
+    text-align: right;
+}
+
+.footer .price .value {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+@media (max-width: 767px) {
+    .hotel,
+    .hotel .data .title,
+    .hotel .footer {
+        flex-direction: column;
+    }
+
+    .hotel .photo {
+        border-right: 0;
+        width: 100%;
+        height: 200px;
+    }
+
+    .hotel .data .footer {
+        flex-direction: column-reverse;
+    }
+}

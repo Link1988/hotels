@@ -1,0 +1,13 @@
+.reviews-list {
+    background-color: #bbb;
+    border: 1px solid #aaa;
+    border-top: 0;
+    border-radius: 0 0 7px 7px;
+    padding: 30px;
+}
+
+@media (max-width: 767px) {
+    .reviews-list {
+        padding: 30px 20px;
+    }
+}
